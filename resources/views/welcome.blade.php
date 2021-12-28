@@ -1,7 +1,9 @@
 <x-layout >
     <x-box>
+        <x-box-title>
         En una escala del 0 al 100%, siendo 100% lo normal o lo mejor para usted. 
         ¿Cómo puntuaría el estado actual de su lesión o dolor?
+        </x-box-title>
         <x-likert-answers>
             <x-likert-label>
                 <p class="text-gray-700 pl-6 mb-0 sm:mx-2">0%</p>
@@ -91,13 +93,14 @@
     </x-box>
 
     <x-box>
-        En relación a su última atención. ¿Qué tan satisfecho se encuentra con la atención brindada?
+        <x-box-title>
+            En relación a su última atención. ¿Qué tan satisfecho se encuentra con la atención brindada?
+        </x-box-title>
+        
         <x-likert-answers>
             <x-likert-label>
                 <p class="text-gray-700 pl-6 mb-0 sm:mx-2">Poco Satisfecho</p>
             </x-likert-label>
-           
-        
 
             <div class="inline sm:px-1">
                 <input class="absolute mt-1 -ml-6 sm:mx-1" type="radio" value="1" name="satisfaction" id="flexRadioDefault1" required="">
@@ -141,8 +144,11 @@
     </x-box>
 
     <x-box>
-        Puntuando del 1 al 5 e incluyendo desde el ingreso en recepción hasta la atención del 
-        profesional de salud ¿Con qué nota calificaría su experiencia en You?
+        <x-box-title>
+            Puntuando del 1 al 5 e incluyendo desde el ingreso en recepción hasta la atención del 
+            profesional de salud ¿Con qué nota calificaría su experiencia en You?
+        </x-box-title>
+        
         <x-likert-answers>
             <x-likert-label>
                 <p class="text-gray-700 pl-6 mb-0 sm:mx-2">Mala</p>
@@ -190,8 +196,11 @@
     </x-box>
 
     <x-box>
-        Con respecto a su última atención. ¿Qué probabilidad existe de que nos recomiende a un 
-        amigo o colega?
+        <x-box-title>
+            Con respecto a su última atención. ¿Qué probabilidad existe de que nos recomiende a un 
+            amigo o colega?
+        </x-box-title>
+        
         <x-likert-answers>
             <x-likert-label>
                 <p class="text-gray-700 pl-6 mb-0 sm:mx-2">0%</p>
@@ -239,10 +248,13 @@
     </x-box>
 
     <x-box>
-        Nos encantaría mejorar. ¿Nos podrías comentar algo que te gustaría que cambiáramos?
-        <likert-answers>
-            <textarea class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" name="comment" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </likert-answers>
+        <x-box-title>
+            Nos encantaría mejorar. ¿Nos podrías comentar algo que te gustaría que cambiáramos?
+        </x-box-title>
+        
+        <x-likert-answers>
+            <textarea class="form-control" name="comment" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </x-likert-answers>
     </x-box>
 
 </x-layout>

@@ -383,46 +383,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
-.container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 640px) {
-
-  .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-
-  .container {
-    max-width: 1536px;
-  }
-}
 .absolute {
   position: absolute;
 }
-.relative {
-  position: relative;
+.col-span-12 {
+  grid-column: span 12 / span 12;
 }
 .mx-auto {
   margin-left: auto;
@@ -461,20 +426,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .inline-flex {
   display: inline-flex;
 }
+.grid {
+  display: grid;
+}
 .hidden {
   display: none;
 }
 .w-full {
   width: 100%;
-}
-.min-w-0 {
-  min-width: 0px;
-}
-.max-w-full {
-  max-width: 100%;
-}
-.flex-auto {
-  flex: 1 1 auto;
 }
 .select-none {
   -webkit-user-select: none;
@@ -489,9 +448,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .flex-row {
   flex-direction: row;
-}
-.flex-col {
-  flex-direction: column;
 }
 .flex-col-reverse {
   flex-direction: column-reverse;
@@ -523,19 +479,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
 .bg-blue-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-.p-4 {
-  padding: 1rem;
-}
-.p-6 {
-  padding: 1.5rem;
 }
 .py-1 {
   padding-top: 0.25rem;
@@ -548,10 +494,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -597,10 +539,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -614,16 +552,35 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: none;
 }
 
-
-.container {
+.container-fluid {
     width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
     margin-right: auto;
     margin-left: auto;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
 
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
   }
 
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+}
+  
 body {
     margin: 0;
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -637,62 +594,17 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.mb-4 {
-    margin-bottom: 1.5rem!important;
-}
-
-.mt-4 {
-    margin-top: 1.5rem!important;
-}
-
-.relative {
-    margin-right: auto!important;
-    margin-left: auto!important;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 0.25rem;
-    flex: 0 0 auto;
-    width: 100%;
+.card-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
 h5 {
-    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
-    padding: 0.5rem 1rem;
-    margin-bottom: 0;
-    background-color: rgba(0,0,0,.03);
-    border-bottom: 1px solid rgba(0,0,0,.125);
     font-size: 1.25rem;
     margin-top: 0;
-    font-weight: 500;
-    line-height: 1.2;
-   
-}
-
-.p-4 {
-    padding: 1rem 1rem;
-    flex: 1 1 auto;
-}
-
-p {
-    margin-bottom: 0;
-    margin-top: 0;
-    
-}
-
-h6 {
-    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
-    padding: 0.5rem 1rem;
-    margin-bottom: 0;
-    background-color: rgba(0,0,0,.03);
-    border-bottom: 1px solid rgba(0,0,0,.125);
-    font-size: 1rem;
-    margin-top: 0;
+    margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
 }
@@ -700,7 +612,23 @@ h6 {
 .card-body {
     flex: 1 1 auto;
     padding: 1rem 1rem;
+}
 
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .form-control {
@@ -719,8 +647,6 @@ h6 {
     appearance: none;
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    margin: 0;
-    font-family: inherit;
 }
 
 .hover\:bg-blue-600:hover {
@@ -777,3 +703,5 @@ h6 {
     width: 80%;
   }
 }
+
+
