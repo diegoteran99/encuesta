@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>Document</title>
 </head>
-<body class="container-fluid sm:px-4 " style="background-color: rgb(44, 44, 44);">
+<body class="container-fluid " style="background-color: rgb(44, 44, 44);">
     <form action="/encuesta" method="POST" class="mb-4">
         <input type="hidden" name="_token" value="lbPLsdVieMt0hAUCyDZFobv7VCObBCP3udOUXYVj">  
-        <div class=" card col-span-12 break-words bg-white border-1 border-gray-300 w-full lg:w-4/5 mx-auto mt-4">
+        <div class=" card col-span-12 break-words bg-white border-1 border-gray-300 w-full lg:w-4/5 lg:col-span-10 mx-auto mt-4">
             <h5 class="card-header " style="background-color:#f2715a; color: white;">
                 Encuesta seguimiento y satisfacción usuario/a
             </h5>
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="card col-span-12 break-words bg-white border-1 border-gray-300 w-full lg:w-4/5 mx-auto mt-4 ">
+        <div class="card col-span-12 break-words bg-white border-1 border-gray-300 w-full lg:w-4/5 lg:col-span-10 mx-auto mt-4 ">
             <h6 class=" card-header " style="color:#f2715a; background-color: white;">
                 Tu Rut
             </h6>
