@@ -8,7 +8,7 @@
             <x-likert-label>
                 0%
             </x-likert-label>
-
+            
             <x-likert-answers>0,10,pain</x-likert-answers>
             
             <x-likert-label>
