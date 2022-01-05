@@ -1,20 +1,11 @@
-<x-layout >
+<x-layout>
     <x-box>
         <x-box-title>
         En una escala del 0 al 100%, siendo 100% lo normal o lo mejor para usted. 
         ¿Cómo puntuaría el estado actual de su lesión o dolor?
         </x-box-title>
-        <x-likert>
-            <x-likert-label>
-                0%
-            </x-likert-label>
-            
-            <x-likert-answers>0,10,pain</x-likert-answers>
-            
-            <x-likert-label>
-                100%
-            </x-likert-label>
-        </x-likert>
+
+        <x-likert>0%,100%,0,10,pain</x-likert>
     </x-box>
 
     <x-box>
@@ -22,17 +13,7 @@
             En relación a su última atención. ¿Qué tan satisfecho se encuentra con la atención brindada?
         </x-box-title>
         
-        <x-likert>
-            <x-likert-label>
-                Poco Satisfecho
-            </x-likert-label>
-
-            <x-likert-answers>1,5,satisfaction</x-likert-answers>
-
-            <x-likert-label>
-                 Muy Satisfecho 
-            </x-likert-label>
-        </x-likert>
+        <x-likert>Poco Satisfecho,Muy Satisfecho,1,5,satisfaction</x-likert>
     </x-box>
 
     <x-box>
@@ -41,17 +22,7 @@
             profesional de salud ¿Con qué nota calificaría su experiencia en You?
         </x-box-title>
         
-        <x-likert>
-            <x-likert-label>
-                Mala
-            </x-likert-label>
-           
-            <x-likert-answers>1,5,experience</x-likert-answers>
-
-            <x-likert-label>
-                 Muy Buena 
-            </x-likert-label>
-        </x-likert>
+        <x-likert>Mala,Muy Buena,1,5,experience</x-likert>
     </x-box>
 
     <x-box>
@@ -60,17 +31,7 @@
             amigo o colega?
         </x-box-title>
         
-        <x-likert>
-            <x-likert-label>
-                0%
-            </x-likert-label>
-           
-            <x-likert-answers>1,5,friend</x-likert-answers>
-            
-            <x-likert-label>
-                 100% 
-            </x-likert-label>
-        </x-likert>
+        <x-likert>0%,100%,1,5,friend</x-likert>
     </x-box>
 
     <x-box>
@@ -78,9 +39,7 @@
             Nos encantaría mejorar. ¿Nos podrías comentar algo que te gustaría que cambiáramos?
         </x-box-title>
         
-        <x-likert>
-            <textarea class="form-control" name="comment" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </x-likert>
+        <x-text-answer></x-text-answer>
     </x-box>
 
 </x-layout>
