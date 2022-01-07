@@ -13,7 +13,7 @@
             En relación a su última atención. ¿Qué tan satisfecho se encuentra con la atención brindada?
         </x-box-title>
         
-        <x-likert>Poco Satisfecho,Muy Satisfecho,1,5,satisfaction</x-likert>
+        <x-likert>Poco Satisfecho,Muy Satisfecho,1,10,satisfaction</x-likert>
     </x-box>
 
     <x-box>

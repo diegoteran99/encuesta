@@ -99,14 +99,6 @@ h6 {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-@media (min-width: 576px) {
-    
-    .sm\:px-2 {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-      }
-    
-}
 
 .px-4 {
     padding-right: 1.5rem!important;
