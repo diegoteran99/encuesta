@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>Document</title>
 </head>
+
 <body class="container-fluid " style="background-color: rgb(44, 44, 44);">
     <form method="post" action="/encuesta" class="mb-4">
         @csrf  
@@ -27,9 +28,14 @@
             <h6 class="card-header" style="color:#f2715a; background-color: white;">
                 Tu Rut
             </h6>
-            <div class="card-body" style="margin-bottom: -1rem;">
+            
+            <div  class="card-body space-y-4" style=
+            "padding-top: 1rem;
+            padding-bottom: 0rem;
+            padding-left: 1rem;
+            padding-right: 1rem;">
                 <div>
-                    <input name="rut" value="{{ old('rut') }}" type="text" class="form-control" placeholder="11111111-1"style="margin-bottom: 0rem;">
+                    <input name="rut" value="{{ old('rut') }}" type="text" class="form-control" placeholder="11111111-1" style="margin-bottom: 1rem;">
                 </div>
                 
                     @error('rut')
@@ -41,8 +47,7 @@
                          background-color: rgba(242,113,90,0.6); 
                          border-radius: 0.25rem;
                          box-sizing: content-box;
-                         margin-left: -16px;
-                         margin-top: 1rem;">
+                         margin-left: -16px;">
                             Por favor ingrese un valor</h5>
                     @enderror
                 
