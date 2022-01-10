@@ -27,7 +27,7 @@
             <h6 class="card-header" style="color:#f2715a; background-color: white;">
                 Tu Rut
             </h6>
-            <div class="card-body" style=" ">
+            <div class="card-body" style="margin-bottom: -1rem;">
                 <div>
                     <input name="rut" value="{{ old('rut') }}" type="text" class="form-control" placeholder="11111111-1"style="margin-bottom: 0rem;">
                 </div>
@@ -41,7 +41,8 @@
                          background-color: rgba(242,113,90,0.6); 
                          border-radius: 0.25rem;
                          box-sizing: content-box;
-                         margin-left: -16px;">
+                         margin-left: -16px;
+                         margin-top: 1rem;">
                             Por favor ingrese un valor</h5>
                     @enderror
                 
