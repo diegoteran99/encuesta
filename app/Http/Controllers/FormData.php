@@ -17,8 +17,5 @@ class FormData extends Controller
             'comment' => 'nullable'
         ]);
         dd($request->all()); 
-        
-        
-        
     }
 }

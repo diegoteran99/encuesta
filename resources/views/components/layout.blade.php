@@ -44,8 +44,8 @@
         {{ $slot }}
 
         <div class="lg:w-4/5 pr-4 pl-4 mx-auto mt-4">
-            <div class="grid gap-2 md:flex md:justify-end">
-                <button type="submit" class="btn btn-primary btn-lg" style="background-color: #f2715a; border: #f2715a;">
+            <div class="grid gap-2 md:justify-end">
+                <button type="submit" class="btn-lg btn" style="background-color: #f2715a; border: #f2715a; color: #ffff;">
                     Enviar
                 </button>      
             </div>
