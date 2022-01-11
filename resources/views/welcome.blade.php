@@ -41,5 +41,4 @@
         
         <x-text-answer></x-text-answer>
     </x-box>
-
 </x-layout>
