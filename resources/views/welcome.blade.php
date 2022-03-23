@@ -1,7 +1,7 @@
 <x-layout>
     <x-box>
         <x-box-title>
-        En una escala del 0 al 100%, siendo 100% lo normal o lo mejor para usted. 
+        En una escala del 0% al 100%, siendo 100% lo normal o lo mejor para usted. 
         ¿Cómo puntuaría el estado actual de su lesión o dolor?
         </x-box-title>
 
@@ -34,6 +34,16 @@
         <x-likert>0%,100%,1,5,friend</x-likert>
     </x-box>
 
+    <x-box>
+        <x-box-title>
+            ¿Cuales fueron las cosas que más te gustaron de You?
+        </x-box-title>
+        
+        <x-checkbox-answer>
+            El trabajo de los internos,El gimnasio,El lugar,La atención que me dieron,La accesibilidad del lugar,gustos
+        </x-checkbox-answer>
+    </x-box>
+    
     <x-box>
         <x-box-title>
             Nos encantaría mejorar. ¿Nos podrías comentar algo que te gustaría que cambiáramos?
