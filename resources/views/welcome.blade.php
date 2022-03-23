@@ -1,3 +1,5 @@
+{{-- Para poder agregar una pregunta también hay que agregar la validación en el controlador "FormData.php" --}}
+
 <x-layout>
     <x-box>
         <x-box-title>
